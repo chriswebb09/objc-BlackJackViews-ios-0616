@@ -148,18 +148,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra6-Lx-heH" userLabel="hit">
-                                <rect key="frame" x="255" y="420" width="60" height="60"/>
-                                <accessibility key="accessibilityConfiguration" label="hit">
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                                <state key="normal" title="Hit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="hitButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="a3E-Q3-Wcy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-D7-yWZ" userLabel="stay">
                                 <rect key="frame" x="334" y="420" width="60" height="60"/>
                                 <accessibility key="accessibilityConfiguration" label="stay">
@@ -238,11 +226,25 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra6-Lx-heH" userLabel="hit">
+                                <rect key="frame" x="255" y="420" width="60" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="hit">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Hit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="a3E-Q3-Wcy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="dealButton" destination="ah4-9X-lXP" id="boL-xf-Or0"/>
+                        <outlet property="hitButton" destination="Ra6-Lx-heH" id="JVN-sL-c0g"/>
                         <outlet property="houseBlackjackLabel" destination="o2I-uD-oQl" id="4cf-wH-um4"/>
                         <outlet property="houseBustLabel" destination="pW6-R2-I3W" id="gkE-a9-4ui"/>
                         <outlet property="houseCard1Label" destination="MB7-5b-QZM" id="SIU-Ab-Thy"/>
@@ -267,6 +269,8 @@
                         <outlet property="playerScoreLabel" destination="2LA-xK-NBK" id="yTq-v8-qXl"/>
                         <outlet property="playerStayedLabel" destination="TmX-OF-3CS" id="X9q-Ke-1oL"/>
                         <outlet property="playerWins" destination="xqU-dA-iHc" id="5xE-jE-A1m"/>
+                        <outlet property="stayButton" destination="dzP-D7-yWZ" id="gkI-cS-gnz"/>
+                        <outlet property="view" destination="Ra6-Lx-heH" id="DvH-Cb-tu8"/>
                         <outlet property="winnerLabel" destination="AFS-sU-bay" id="x4z-2K-yBt"/>
                     </connections>
                 </viewController>

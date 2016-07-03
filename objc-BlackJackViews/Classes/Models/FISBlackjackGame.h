@@ -1,4 +1,12 @@
 //
+//  FISBlackjackGame.h
+//  objc-BlackJackViews
+//
+//  Created by Christopher Webb-Orenstein on 7/3/16.
+//  Copyright © 2016 Flatiron School. All rights reserved.
+//
+
+//
 //  FISBlackJackGame.h
 //  objc-BlackJackViews
 //
